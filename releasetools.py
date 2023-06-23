@@ -43,7 +43,7 @@ def GetRadioFiles(z):
   out = {}
   for info in z.infolist():
     if info.filename.startswith("RADIO/") and (info.filename.__len__() > len("RADIO/")):
-      fn = "RADIO/" + info.filename[6:]
+      fn = f"RADIO/{info.filename[6:]}"
       out[fn] = fn
   return out
 
